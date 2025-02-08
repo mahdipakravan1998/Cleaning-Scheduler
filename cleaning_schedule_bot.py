@@ -1,7 +1,10 @@
+import nest_asyncio
+nest_asyncio.apply()  # Allow nested event loops
+
 import logging
 import asyncio
-from telegram import Bot
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Update
+from telegram import Update
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # Enable logging (useful for debugging)
 logging.basicConfig(
